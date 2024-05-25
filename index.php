@@ -9,21 +9,25 @@
 </head>
 
 <body>
+    <h1 class="main-title text-center">Employee Leave Form</h1>
     <form action="/submit-leave-request" method="POST">
         <label for="name">Name:</label><br>
-        <input class="form-control" type="text" id="name" name="name" required><br>
+        <input placeholder="Enter Your Full Name" class="form-control" type="text" id="name" name="name" required><br>
         <label for="mobile">Mobile Number:</label><br>
-        <input class="form-control" type="tel" id="mobile" name="mobile" required><br>
+        <input placeholder="Enter a Valid Mobile Number" class="form-control" type="tel" id="mobile" name="mobile"
+            required><br>
         <label for="startDate">Start Date:</label><br>
-        <input class="form-control" type="date" id="startDate" name="startDate" required><br>
-        <label for="endDate">End Date:</label><br>
-        <input class="form-control" type="date" id="endDate" name="endDate" required><br>
+        <input class="form-control" type="date" id="start-date" name="startDate" required><br>
+        <label for="end-date">End Date:</label><br>
+        <input class="form-control" type="date" id="end-date" name="endDate" required><br>
         <label for="totalDays">Number of Total Days:</label><br>
-        <input class="form-control" type="number" id="totalDays" name="totalDays" required><br>
+        <input class="form-control" type="text" id="total-days" name="totalDays" required><br>
         <label for="reason">Reason for Leave:</label><br>
-        <textarea class="form-control" id="reason" name="reason" cols="80" rows="10"></textarea><br>
+        <textarea class="input-textarea" placeholder="Enter Your Reason for Leave!" id="reason" name="reason" cols="80"
+            rows="10"></textarea><br>
         <button class="submit-button">Submit</button>
     </form>
+    <script src="validation.js"></script>
 </body>
 
 </html>
