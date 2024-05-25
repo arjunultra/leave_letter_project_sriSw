@@ -1,7 +1,7 @@
 let startDate = document.getElementById("start-date");
 let endDate = document.getElementById("end-date");
 let numberOfDaysDisplay = document.getElementById("total-days");
-
+numberOfDaysDisplay.readOnly = true;
 function calculateDays() {
   let start = new Date(startDate.value);
   let end = new Date(endDate.value);
