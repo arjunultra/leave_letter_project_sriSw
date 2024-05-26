@@ -1,3 +1,6 @@
+const leaveForm = document.getElementById("leave-form");
+const submitMessage = document.getElementById("submit-msg");
+// date validation
 let startDate = document.getElementById("start-date");
 let endDate = document.getElementById("end-date");
 let numberOfDaysDisplay = document.getElementById("total-days");
@@ -18,3 +21,17 @@ function calculateDays() {
 
 endDate.addEventListener("keyup", calculateDays);
 endDate.addEventListener("change", calculateDays);
+// Prevent default form submission on page load
+document.addEventListener("DOMContentLoaded", function () {
+  leaveForm.addEventListener("submit", function (e) {
+    // Prevent default form submission
+    e.preventDefault();
+    // Check if the form is valid
+    if (this.checkValidity()) {
+      // Submit the form
+      this.submit();
+      // submitMessage.classList.remove("d-none");
+      // submitMessage.classList.add("d-block");
+    }
+  });
+});
