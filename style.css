@@ -36,7 +36,7 @@ body::before {
       rgba(182, 36, 36, 0.773),
       rgba(231, 108, 0, 0.321)
     ),
-    url(./5215677.jpg);
+    url(./assets/5215677.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
